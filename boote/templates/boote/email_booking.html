@@ -1,16 +1,18 @@
 Hallo {{ booking.user.first_name }},
 
-You have reserved a boat:
+du hast das folgende Boot verbindlich reserviert:
  
- Boat: {{ booking.boat.type.name }} "{{ booking.boat.name }}"
- Date: {{ booking.date }}
- From: {{ booking.time_from }} - {{ booking.time_to.time }}
+ Boot: {{ booking.boat.type.name }} "{{ booking.boat.name }}"
+ Datum: {{ booking.date }}
+ Uhrzeit: {{ booking.time_from }} - {{ booking.time_to.time }}
+ 
+Bitte sei pünktlich, da deine Reservierung um genau {{ booking.time_from }} verfällt. Ab dann dürfen andere Vereinsmitglieder das Boot nutzen.
 
-Please make sure you are on time and finish exactly at {{ booking.time_to.time }}. 
+Bitte stelle zudem sicher, dass du bis spätestens {{ booking.time_to.time }} mit dem Segeln fertig bist. 
 
-If you do need the reservation anymore please cancel it from mein.svpb.de at least 2 days before.
+Falls du die Reservierung nicht nutzen möchtest, storniere deine Reservierung bitte 2 Tage vorher unter http://mein.svpb.de.
 
-Have fun!
+Viel Spass!
 
 --
 SVPB Lippesee
