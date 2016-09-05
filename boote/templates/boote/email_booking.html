@@ -1,16 +1,25 @@
 Hallo {{ booking.user.first_name }},
 
-You have reserved a boat:
+du hast das folgende Boot reserviert:
  
- Boat: {{ booking.boat.type.name }} "{{ booking.boat.name }}"
- Date: {{ booking.date }}
- From: {{ booking.time_from }} - {{ booking.time_to.time }}
+ Boot: {{ booking.boat.type.name }} "{{ booking.boat.name }}"
+ Datum: {{ booking.date }}
+ Uhrzeit: {{ booking.time_from }} - {{ booking.time_to.time }}
 
-Please make sure you are on time and finish exactly at {{ booking.time_to.time }}. 
+Wichtiges:
 
-If you do need the reservation anymore please cancel it from mein.svpb.de at least 2 days before.
+1. Bitte sei pünktlich. Wenn das Boot ab {{ booking.time_from }} nicht genutzt wird, verfällt die Reservierung.
 
-Have fun!
+2. Wenn du das Boot doch nicht nutzen möchtest, storniere bitte deine Reservierung unter http://mein.svpb.de spätestens 2 Tage vorher.
 
---
+3. Eine zusätzliche Eintragung in die Nutzungsliste im Bootshaus entfällt.
+
+4. Mängel am Boot melde bitte über unser Reservierungssystem unter http://mein.svpb.de
+
+
+Viel Spass
+
 SVPB Lippesee
+
+http://mein.svpb.de
+http://www.svpb.de
